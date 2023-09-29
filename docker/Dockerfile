@@ -1,6 +1,6 @@
 FROM pytorch/pytorch:1.5.1-cuda10.1-cudnn7-devel
 
-ENV TORCH_CUDA_ARCH_LIST="6.0 6.1 7.0+PTX"
+ENV TORCH_CUDA_ARCH_LIST="6.0 6.1 7.0+PTX 8.6"
 ENV TORCH_NVCC_FLAGS="-Xfatbin -compress-all"
 ENV CMAKE_PREFIX_PATH="$(dirname $(which conda))/../"
 
